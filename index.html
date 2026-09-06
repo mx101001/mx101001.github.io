@@ -1,117 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-
-    <head>
-	<meta name="generator" content="Hugo 0.140.2"><title>MXblog &ndash; MXblog</title>
-<meta name="description" content="">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8"/>
-
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-<link rel="stylesheet" href="https://mx101001.github.io/css/palettes/base16-dark.css">
-<link rel="stylesheet" href="https://mx101001.github.io/css/risotto.css">
-<link rel="stylesheet" href="https://mx101001.github.io/css/custom.css">
-
-
-
-
-
-
-
-
-
-<link rel="alternate" type="application/rss+xml" href="https://mx101001.github.io/index.xml" title="MXblog">
-
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#171817">
+<title>Dario Mongardini — Developer / MX</title>
+<meta name="description" content="Il portfolio di Dario Mongardini: sviluppo web, esperimenti in C e workflow con strumenti AI. Esplora i progetti e prova il Game of Life.">
+<link rel="canonical" href="https://mx101001.github.io/"><meta property="og:title" content="Dario Mongardini — Developer / MX"><meta property="og:description" content="Dal frontend agli automi cellulari. Progetti, codice e un piccolo laboratorio da provare."><meta property="og:type" content="website"><meta property="og:url" content="https://mx101001.github.io/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/portfolio.css"><script type="module" src="assets/portfolio.js"></script>
 </head>
+<body>
+<a class="skip" href="#main">Vai al contenuto</a>
+<header class="nav wrap"><a href="#" class="wordmark" aria-label="Dario Mongardini, inizio">mx<span>/</span></a><nav aria-label="Navigazione principale"><a href="#progetti">Progetti <span>02</span></a><a href="#metodo">Workflow</a><a href="#contatto">Contatto ↗</a></nav></header>
+<main id="main">
+<section class="hero wrap" aria-labelledby="intro"><div class="eyebrow hero-top"><span>DEV PORTFOLIO / DARIO MONGARDINI</span><span>EDIZIONE 2026.09</span></div><h1 id="intro">Dario<br><span>Mongardini<span class="period">.</span></span></h1><div class="hero-bottom"><p>Sviluppo interfacce.<br>Smonto problemi.<br><em>Seguo la curiosità.</em></p><div class="intro-note"><p>Dal frontend in React agli automi cellulari in C. Questo è quello che sto costruendo, con il codice a portata di click.</p><a class="text-link" href="#progetti">Esplora i lavori <span>↓</span></a></div></div></section>
+<section class="lab-band" aria-labelledby="lab-title"><div class="lab wrap"><div class="lab-copy"><span class="eyebrow">00 / PRIMA, UN ESPERIMENTO</span><h2 id="lab-title">Tre regole.<br> Un mondo<br><em>che si muove.</em></h2><p>Il Game of Life: ogni cella cambia in base alle sue vicine. Da un esperimento in C, una versione con cui puoi giocare qui.</p><p class="lab-hint" id="board-help">Disegna sulla griglia, poi premi Avvia. Da tastiera: frecce per muoverti, spazio per cambiare una cella.</p><a class="text-link" href="#progetto-life">Dentro il progetto ↗</a></div><div class="lab-console"><div class="console-top"><span>CONWAY’S GAME OF LIFE</span><span id="life-state">IN PAUSA</span></div><canvas id="life" width="960" height="480" tabindex="0" aria-label="Griglia interattiva Game of Life, 80 colonne per 40 righe" aria-describedby="board-help">La simulazione richiede un browser con supporto Canvas e JavaScript. Puoi leggere il progetto nella sezione seguente.</canvas><div class="console-meta"><span>GEN <b id="generation">0000</b></span><span>CELLE <b id="population">36</b></span><span>80 × 40 / TORO</span></div><div class="console-controls"><button id="play" class="primary" type="button" aria-pressed="false">Avvia <span aria-hidden="true">▶</span></button><button id="step" type="button">+1 step</button><button id="reset" type="button">Ripristina</button><button id="clear" type="button">Svuota</button><label class="speed">Velocità <select id="speed"><option value="150">Lenta</option><option value="75" selected>Normale</option><option value="30">Veloce</option></select></label></div><p class="sr-only" id="board-status" aria-live="polite"></p><noscript><p class="noscript">Attiva JavaScript per giocare. Tutti i progetti e i contatti restano consultabili.</p></noscript></div></div></section>
+<section class="projects wrap" id="progetti" aria-labelledby="projects-title"><div class="section-heading"><div><span class="eyebrow">01 / LAVORI RECENTI</span><h2 id="projects-title">Dal repository,<br>alla realtà.</h2></div><p>Selezione dal 6 giugno al 6 settembre 2026.<br>Due progetti pubblici, due modi di costruire.</p></div>
+<article class="project" id="progetto-life"><div class="project-number">01</div><div class="project-main"><div class="project-meta"><span>ESPERIMENTO / C</span><time datetime="2026-08-26">26 AGO 2026</time></div><h3>Un universo<br>nel terminale.</h3><p>Un automa cellulare in C, un sorgente offuscato e una seconda versione leggibile. Lo stesso problema osservato da due prospettive: quanto puoi comprimere il codice, e quanto puoi renderlo comprensibile.</p><ul class="tags" aria-label="Tecnologie"><li>C99</li><li>Bitmask</li><li>Make</li><li>Automi cellulari</li></ul><details><summary>Apri gli appunti del progetto <span>+</span></summary><div class="project-notes"><p><strong>La costruzione.</strong> Il pattern iniziale è codificato con maschere di bit. Due buffer separano la generazione corrente da quella successiva; il mondo si richiude sui bordi.</p><p><strong>La verifica prevista.</strong> Il Makefile compila le due versioni e include un target <code>check</code> che ne confronta l’output con <code>cmp</code>.</p><p><strong>Qui nel portfolio.</strong> La demo è una nuova implementazione JavaScript delle regole di Conway, su una griglia 80 × 40. Il progetto originale usa 24 × 80 celle.</p><a href="https://github.com/mx101001/ioccc-glider-cannon/blob/main/life_deobfuscated.c">Leggi la versione commentata ↗</a></div></details><a class="repo-link" href="https://github.com/mx101001/ioccc-glider-cannon">ioccc-glider-cannon <span>↗</span></a></div><div class="code-exhibit"><div class="exhibit-header"><span>life_deobfuscated.c</span><span>C99</span></div><pre><code><span class="comment">/* Una cella alla volta. */</span>
+n = count_neighbours(row, col);
 
-    <body>
-        <div class="page">
-
-            <header class="page__header"><nav class="page__nav main-nav">
-    <ul>
-      <li class="nomarker"><h1 class="page__logo"><a href="https://mx101001.github.io/" class="page__logo-inner">MXblog</a></h1></li>
-    
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://mx101001.github.io/about/" title="">About</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://mx101001.github.io/posts/" title="Posts">Posts</a></li>
-    
-    </ul>
-</nav>
-
-</header>
-
-            <section class="page__body">
-    
-
-            </section>
-
-            <section class="page__aside">
-                <div class="aside__about">
-<div class="aside__about">
-    <span class="about__logo" role="img">🍚</span>&nbsp;
-    
-<h1 class="about__title">risotto</h1>
-
-</div>
-
-
-<ul class="aside__social-links">
-    
-    <li>
-        <a href="https://github.com/mx101001" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
-    </li>
-    
-    <li>
-        <a href="dario.mongardini@gmail.com" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
-    </li>
-    
-</ul>
-</div>
-                <hr>
-                <div class="aside__content">
-                </div>
-            </section>
-
-            <footer class="page__footer"><p>
-    
-    
-    
-    
-    
-    
-      
-    
-      
-    
-    
-    
-      
-      
-          
-            
-            
-                <br/><span class="active">$ echo $LANG<br/><b></b></span><br/>
-
-            
-          
-      
-    
-</p>
-<br /><br />
-<p class="copyright"></p>
-<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
-</footer>
-
-        </div>
-    </body>
-
-</html>
+scratch[row][col] = world[row][col]
+    ? <span class="accent">(n == 2 || n == 3)</span>
+    : <span class="accent">(n == 3)</span>;</code></pre><div class="code-caption"><span>LE REGOLE, NEL CODICE ORIGINALE</span><a href="#life">Provale sopra ↑</a></div></div></article>
+<article class="project" id="progetto-ekos"><div class="project-number">02</div><div class="project-main"><div class="project-meta"><span>WEB / AUDIO HIGH-END</span><time datetime="2026-07-08">06–08 LUG 2026</time></div><h3>EKOS.<br>Spazio al suono.</h3><p>Una landing per l’audio high-end: identità visiva, prodotti e specifiche tecniche. Un percorso di prototipazione con Lovable, dalle sezioni iniziali ai loghi e alla rifinitura tipografica.</p><ul class="tags" aria-label="Tecnologie"><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>Lovable</li></ul><details><summary>Apri gli appunti del progetto <span>+</span></summary><div class="project-notes"><p><strong>La struttura.</strong> Componenti per hero, storia, prodotti e gallery. Un componente <code>Product</code> riutilizza lo stesso schema per immagini, descrizioni e specifiche.</p><p><strong>Il workflow.</strong> La cronologia registra iterazioni con Lovable, commit co-firmati e richieste mirate su loghi e font. Gli strumenti AI fanno parte esplicita del processo.</p><p><strong>Il confine del lavoro.</strong> È documentata la richiesta di conversione per WordPress/Colibri; questo repository mostra il frontend React, non un tema WordPress completato.</p><a href="https://github.com/mx101001/ekos-style-landing/blob/main/src/routes/index.tsx">Esplora i componenti ↗</a></div></details><a class="repo-link" href="https://github.com/mx101001/ekos-style-landing">ekos-style-landing <span>↗</span></a></div><div class="ekos-exhibit"><div class="exhibit-header"><span>ARCHITETTURA DEL FRONTEND</span><span>TSX</span></div><div class="ekos-type">EKOS<span>Listen to believe</span></div><div class="component-list"><span>01 &nbsp; Hero</span><span>02 &nbsp; Story</span><span>03 &nbsp; Products <b>×2</b></span><span>04 &nbsp; Gallery</span></div><a href="https://github.com/mx101001/ekos-style-landing/blob/main/src/routes/index.tsx">Dal layout ai componenti ↗</a></div></article></section>
+<section class="skills-band" id="skill"><div class="wrap skills-layout"><div><span class="eyebrow">02 / COMPETENZE IN PRATICA</span><h2>La skill è<br>nel progetto.</h2><p>Ogni competenza ha un punto di partenza che puoi aprire e leggere.</p></div><div class="skill-rows"><a href="#progetto-ekos"><span>Frontend</span><p>React, TypeScript, componenti riutilizzabili, layout responsive.</p><b>EKOS ↗</b></a><a href="#progetto-life"><span>Logica & C</span><p>Griglie, buffer, operazioni bit a bit e regole di evoluzione.</p><b>GLIDER ↗</b></a><a href="#progetto-life"><span>Build & verifica</span><p>Makefile, flag del compilatore e confronto dell’output.</p><b>GLIDER ↗</b></a><a href="#metodo"><span>Workflow AI</span><p>Prototipazione con Lovable e iterazioni tracciate su GitHub.</p><b>WORKFLOW ↗</b></a></div></div></section>
+<section id="metodo" class="workflow wrap" aria-labelledby="workflow-title"><div class="section-heading"><div><span class="eyebrow">03 / IL MODO DI LAVORARE</span><h2 id="workflow-title">Un’idea. Un diff.<br>Un passo avanti.</h2></div><p>Il processo che emerge dai commit:<br>prototipare, rifinire, rendere leggibile.</p></div><div class="workflow-grid"><div><span class="stage">01 / PROTOTIPARE</span><h3>Dare forma.</h3><p>In EKOS, le prime iterazioni costruiscono la landing e la sua struttura con Lovable.</p><a href="https://github.com/mx101001/ekos-style-landing/commit/e25506711eb7c6f32480493c689d52acba35a17a"><code>e255067</code> · Landing iniziale ↗</a></div><div><span class="stage">02 / RIFINIRE</span><h3>Entrare nei dettagli.</h3><p>Loghi di prodotto e tipografia diventano richieste specifiche nella cronologia del progetto.</p><a href="https://github.com/mx101001/ekos-style-landing/commit/84228ce927f99be69f02fd986c040b3d080be1cb"><code>84228ce</code> · Loghi prodotti ↗</a></div><div><span class="stage">03 / RENDERE LEGGIBILE</span><h3>Aprire il cofano.</h3><p>Nel progetto C, al sorgente offuscato si affiancano una versione commentata e un confronto dell’output.</p><a href="https://github.com/mx101001/ioccc-glider-cannon/commit/1b13da396fd45e4bb05caefdf391ac389c90cb19"><code>1b13da3</code> · Due versioni ↗</a></div></div><div class="method-note"><span>AI, NEL PROCESSO.</span><p>Uso strumenti AI per esplorare e iterare. Nel portfolio mostro il contesto, il risultato e i sorgenti: puoi farti un’idea del lavoro direttamente dal codice.</p></div></section>
+<section class="contact wrap" id="contatto"><span class="eyebrow">04 / LA PROSSIMA COSA DA COSTRUIRE</span><h2>Hai un problema<br><em>interessante?</em></h2><a class="contact-link" href="mailto:dario.mongardini@gmail.com">Parliamone <span>↗</span></a><div class="contact-bottom"><a href="mailto:dario.mongardini@gmail.com">dario.mongardini@gmail.com</a><a href="https://github.com/mx101001">GitHub / mx101001 ↗</a></div></section>
+</main><footer class="wrap footer"><span>© 2026 DARIO MONGARDINI</span><span>CODICE, CURIOSITÀ E QUALCHE CELLA VIVA.</span><a href="#">Torna su ↑</a></footer>
+</body></html>

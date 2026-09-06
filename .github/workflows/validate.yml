@@ -1,0 +1,18 @@
+name: Validate portfolio
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test scripts/life.test.mjs
+      - run: node --check assets/portfolio.js
+      - run: python3 scripts/check_site.py
