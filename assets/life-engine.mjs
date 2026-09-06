@@ -19,3 +19,14 @@ export function evolve(cells, width = WIDTH, height = HEIGHT) {
   }
   return next;
 }
+
+export function createPattern(name, random = Math.random) {
+  if (name === 'gosper') return seed();
+  const cells = new Uint8Array(WIDTH * HEIGHT);
+  if (name === 'glider') {
+    for (const [x,y] of [[1,0],[2,1],[0,2],[1,2],[2,2]]) cells[(y+18)*WIDTH+x+38]=1;
+  } else if (name === 'chaos') {
+    for (let y=10;y<30;y++) for (let x=20;x<60;x++) cells[y*WIDTH+x]=Number(random()<0.28);
+  }
+  return cells;
+}

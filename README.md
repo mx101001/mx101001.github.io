@@ -21,10 +21,12 @@ Editorial snapshot: 6 June – 6 September 2026, public repositories visible on 
 
 ## Interaction
 
-The browser Game of Life is a new JavaScript implementation of Conway B3/S23, seeded with the standard Gosper glider gun. It is not a compiled reproduction of the C source. It uses an 80×40 torus, while the original uses 80×24. Starts paused; mouse/touch painting, keyboard editing, stepping, speed, reset and clear are supported. Animation pauses when the tab is hidden.
+The browser Game of Life is a new JavaScript implementation of Conway B3/S23, seeded with the standard Gosper glider gun. It is not a compiled reproduction of the C source. It uses an 80×40 torus, while the original uses 80×24. The simulation runs when visible unless reduced motion is preferred. Mouse/touch drawing, keyboard editing, stepping, speed, reset, clear and three seed patterns are supported. A survival challenge evaluates the user’s pattern after 30 generations. Animation pauses when the tab or playground is hidden, or a project dialog is open.
+
+The EKOS demo is a clearly labelled reinterpretation with desktop/tablet/mobile width presets and a continuous resize slider. Project dialogs pair the demos with source excerpts and repository evidence. Workflow tabs support keyboard navigation; the fixed navigation dock tracks the current section. Contact actions include an email link and clipboard copying with a failure fallback.
 
 ## Editing
 
-Content: `index.html`. Style: `assets/portfolio.css`. Interaction: `assets/portfolio.js`. Automaton: `assets/life-engine.mjs`. Update the snapshot date when reviewing newer work. Fonts use Google Fonts with local system fallbacks; no analytics or cookies are included.
+Content: `index.html`. Style: `assets/portfolio.css`. Interaction: `assets/portfolio.js`. Automaton: `assets/life-engine.mjs`. Project details: `assets/project-data.mjs`. Update the snapshot date when reviewing newer work. Fonts use Google Fonts with local system fallbacks; no analytics or cookies are included.
 
 The original blog routes are preserved. The new portfolio replaces the root homepage without rewriting Git history.
